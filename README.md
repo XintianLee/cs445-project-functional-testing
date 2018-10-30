@@ -3,7 +3,7 @@
 The testing script is written in **Python 3**.
 
 There are 35 test cases listed in `testcli.py` corresponding to the 35 test
-cases in [Project Functional Testing][1]. The directory `test-data` constains
+cases in [Project Functional Testing][1]. The directory `test-data` contains
 json resources used in the testing.
 
 ## Preparing
@@ -17,7 +17,7 @@ sudo apt-get install python3-pip
 
 Install package **requests** by **pip**
 ```
-pip3 install requests
+sudo pip3 install requests
 ```
 
 ## Run the testing

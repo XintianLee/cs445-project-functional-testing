@@ -184,7 +184,7 @@ class ParkpayTestClient:
             else:
                 print('Failed on the test:')
                 print(self.tests[i])
-                break
+                #break
 
 
     def test_get(self, tinfo):
