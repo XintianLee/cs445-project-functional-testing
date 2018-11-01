@@ -33,7 +33,7 @@ tests = [
     ('POST', '/parks/{pid1}/notes', 'test-data/test-parks-create-note-POST-1.json', 400, 'test-data/test-parks-create-note-POST-1-response.json'),
     ('POST', '/parks/{pid3}/notes', 'test-data/test-parks-create-note-POST-2.json', 201, 'test-data/test-parks-create-note-POST-2-response.json', '{nid1}'),
     ('GET', '/visitors/{vid1}', 200, 'test-data/test-visitors-view-visitor-detail-GET-2-response.json'),
-    ('GET', '/notes/nid1', 200, 'test-data/test-notes-view-note-detail-GET-1-response.json'),
+    ('GET', '/notes/{nid1}', 200, 'test-data/test-notes-view-note-detail-GET-1-response.json'),
 
     ('POST', '/orders', 'test-data/test-orders-create-POST-2.json', 201, 'test-data/test-orders-create-POST-2-response.json', '{oid2}'),
     ('POST', '/orders', 'test-data/test-orders-create-POST-3.json', 201, 'test-data/test-orders-create-POST-3-response.json', '{oid3}'),
