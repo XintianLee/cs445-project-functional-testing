@@ -151,7 +151,7 @@ class ParkpayTestClient:
         elif isinstance(obj, list):
             return [self.replace_ids_in_res(o) for o in obj]
         elif isinstance(obj, str):
-            if re.match(r'<date.+id>$', obj):
+            if re.match(r'<date.+id.+>$', obj):
                 obj = self.date_str
         return obj
 
