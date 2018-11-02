@@ -10,7 +10,7 @@
     "type": "rv"
   },
   "visitor": {
-    "name": "",
+    "name": "Jane Smith",
     "email": "jane.smith@example.com",
     "payment_info": {
       "card": "xxxxxxxxxxx5678",
