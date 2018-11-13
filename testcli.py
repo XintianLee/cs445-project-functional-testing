@@ -206,8 +206,14 @@ class ParkpayTestClient:
             # update ID tabs with real IDs
             for pat, key in self.get_cases:
                 if re.match(pat, path):
-                    for o, k in zip(resj, tinfo[4]):
-                        self.ids[k] = o[key]
+                    if key == 'rid':
+                        if resj[0]['name'] == "Admissions report":
+                            self.ids[tinfo[4][0]], self.ids[tinfo[4][1]] = resj[0]['rid'], resj[1]['rid']
+                        else:
+                            self.ids[tinfo[4][1]], self.ids[tinfo[4][0]] = resj[0]['rid'], resj[1]['rid']
+                    else:
+                        for o, k in zip(resj, tinfo[4]):
+                            self.ids[k] = o[key]
                     break
 
             # "date_and_time" check
