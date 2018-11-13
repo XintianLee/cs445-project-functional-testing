@@ -217,7 +217,7 @@ class ParkpayTestClient:
                     break
 
             # "date_and_time" check
-            if re.match(r'orders/.+', path):
+            if re.match(r'/orders/.+', path):
                 if 'payment_processing' in resj and 'date_and_time' in resj['payment_processing']:
                     resj['payment_processing']['date_and_time'] = \
                         resj['payment_processing']['date_and_time'][:10]
